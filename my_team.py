@@ -84,7 +84,6 @@ class approx_q_learning_offense(CaptureAgent):
 
     self.max_dead_end = max(value for row in self.dead_ends_depth for value in row)
 
-    episode = game_state.get_episode()
     # print("igra br: ", episode)
     self.set_default_file()
     # self.epsilon = max(0.1, 0.5 * (0.99 ** episode))
